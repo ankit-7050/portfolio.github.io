@@ -265,51 +265,15 @@ AOS.init({
   });
 })(jQuery);
 
-// Render PDF and JPG on page load
-document.querySelectorAll(".pdfCanvas").forEach((canvas) => {
-  const pdfPath = canvas.getAttribute("data-file-path");
-  pdfjsLib.getDocument(pdfPath).promise.then((pdf) => {
-    pdf.getPage(1).then((page) => {
-      const viewport = page.getViewport({ scale: 1 });
-      const context = canvas.getContext("2d");
-      canvas.width = viewport.width;
-      canvas.height = viewport.height;
-
-      const renderContext = {
-        canvasContext: context,
-        viewport: viewport,
-      };
-
-      page.render(renderContext);
-    });
-  });
-});
-
 // Function to show enlarged view for both PDF and JPG
 function showEnlargedView(type, filePath) {
   const modal = document.getElementById("imageModal");
   const modalCanvas = document.getElementById("modalCanvas");
   const modalImage = document.getElementById("modalImage");
-
-  if (type === "pdf") {
-    modalCanvas.style.display = "block";
-    modalImage.style.display = "none";
-    pdfjsLib.getDocument(filePath).promise.then((pdf) => {
-      pdf.getPage(1).then((page) => {
-        const viewport = page.getViewport({ scale: 2 });
-        modalCanvas.width = viewport.width;
-        modalCanvas.height = viewport.height;
-        const context = modalCanvas.getContext("2d");
-        page.render({ canvasContext: context, viewport: viewport });
-        modal.style.display = "flex";
-      });
-    });
-  } else if (type === "jpg") {
-    modalCanvas.style.display = "none";
-    modalImage.style.display = "block";
-    modalImage.src = filePath;
-    modal.style.display = "flex";
-  }
+  modalCanvas.style.display = "none";
+  modalImage.style.display = "block";
+  modalImage.src = filePath;
+  modal.style.display = "flex";
 }
 
 // Function to close modal
@@ -365,43 +329,7 @@ $(document).ready(function () {
       carouselItems.append(itemHtml);
     });
   }
-  const retailSqlImages = [
-    "10.png",
-    "12.png",
-    "14.png",
-    "16.png",
-    "18.png",
-    "20.png",
-    "22.png",
-    "24.png",
-    "26.png",
-    "28.png",
-    "30.png",
-    "32.png",
-    "34.png",
-    "Q1.png",
-    "Q3.png",
-    "Q5.png",
-    "Q7.png",
-    "Q9.png",
-    "11.png",
-    "13.png",
-    "15.png",
-    "17.png",
-    "19.png",
-    "21.png",
-    "23.png",
-    "25.png",
-    "27.png",
-    "29.png",
-    "31.png",
-    "33.png",
-    "35.png",
-    "Q2.png",
-    "Q4.png",
-    "Q6.png",
-    "Q8.png",
-  ];
+  const retailSqlImages = [ "10.png", "12.png", "14.png", "16.png", "18.png", "20.png", "22.png", "24.png", "26.png", "28.png", "30.png", "32.png", "34.png", "Q1.png", "Q3.png", "Q5.png", "Q7.png", "Q9.png", "11.png", "13.png", "15.png", "17.png", "19.png", "21.png", "23.png", "25.png", "27.png", "29.png", "31.png", "33.png", "35.png", "Q2.png", "Q4.png", "Q6.png", "Q8.png",];
   const retailPowerBiImages = [
     "Discount Analysis .jpg",
     "Profit Analysis.jpg",
@@ -409,9 +337,13 @@ $(document).ready(function () {
   ]; //File name
   // Populate carousels
   populateCarousel("pizzasImageSlider", "./images/sqlfile", retailSqlImages);
-  populateCarousel(
-    "amazonImageSlider",
-    "./images/powerbi_file",
-    retailPowerBiImages
-  );
+  populateCarousel("amazonImageSlider","./images/powerbi_file",retailPowerBiImages);
+  populateCarousel("netflixExploratory","./images/sqlfile",retailSqlImages);
+  populateCarousel("netflixExploratoryScnd","./images/powerbi_file",retailPowerBiImages);
+  populateCarousel("amazonSales","./images/sqlfile",retailSqlImages);
+  populateCarousel("amazonSalesScnd","./images/powerbi_file",retailPowerBiImages);
+  populateCarousel("vehicleCollision","./images/sqlfile",retailSqlImages);
+  populateCarousel("vehicleCollisionScnd","./images/powerbi_file",retailPowerBiImages);
+  populateCarousel("indiaCrop","./images/sqlfile",retailSqlImages);
+  populateCarousel("indiaCropScnd","./images/powerbi_file",retailPowerBiImages);
 });

@@ -22,7 +22,6 @@
 	<link rel="stylesheet" href="css/flaticon.css">
 	<link rel="stylesheet" href="css/icomoon.css">
 	<link rel="stylesheet" href="css/style.css">
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.9.359/pdf.min.js"></script>
 </head>
 
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
@@ -111,9 +110,9 @@
 								<h2>A Data Analyst</h2>
 								<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
 								<!-- <br> -->
-								<div><a href="https://www.linkedin.com/in/ankit-kumar-b4615417b/"class="btn btn-primary py-3 px-4">LinkedIn</a>
-									<a href="https://github.com/ankit-7050" class="btn btn-white btn-outline-white py-3 px-4">GitHub</a>
-									<a href="https://drive.google.com/file/d/1kFV7VJLD4GpxHkXkZODhvHe-697euuja/view?usp=sharing" class="btn btn-white btn-outline-white py-3 px-4">Resume</a>
+								<div><a href="https://www.linkedin.com/in/ankit-kumar-b4615417b/"class="btn btn-outline-warning py-3 px-4">LinkedIn</a>
+									<a href="https://github.com/ankit-7050" class="btn btn-outline-warning py-3 px-4">GitHub</a>
+									<a href="https://drive.google.com/file/d/1kFV7VJLD4GpxHkXkZODhvHe-697euuja/view?usp=sharing" class="btn btn-outline-warning py-3 px-4">Resume</a>
 								</div>
 							</div>
 						</div>
@@ -274,6 +273,7 @@
 				</div>
 			</div>
 			<div class="row">
+				<!-- First section -->
 				<div class="col-md-6">
 					<div class="resume-wrap ftco-animate">
 						<span class="date">DEC 2023 - JAN 2024</span>
@@ -301,15 +301,16 @@
 						</div>
 					</div>
 				</div>
-				<!-- <div class="col-md-6">
+				<!-- Second section -->
+				<div class="col-md-6">
 					<div class="resume-wrap ftco-animate">
 						<span class="date">DEC 2023 - JAN 2024</span>
 						<h2>Data Analyst - Internship</h2>
 						<span class="position">Psyliq</span>
-						<p class="mt-4">Psyliq is internship specialist, connects job seekers with real-world projects
+						<p class="project-description mt-4">Psyliq is internship specialist, connects job seekers with real-world projects
 							and amazing data sets. It offers hands-on experiences to enhance your professional skills
 							and help you kickstart your career.
-						<ul>
+						<!-- <ul>
 							<li>During my internship as a Data Analyst, I had the privilege to immerse myself in the
 								world of real-world data analytics and make tangible contributions to the organization's
 								objectives.</li>
@@ -319,10 +320,15 @@
 								learning, and growth. It equipped me with valuable skills and experiences that will
 								undoubtedly serve as a strong foundation for my future endeavors in the field of data
 								analytics.</li>
-						</ul>
+						</ul> -->
 						</p>
+						<div class="d-flex justify-content-between">
+							<button type="button" class="btn rounded-lg btn-outline-warning shadow-none" data-toggle="modal" data-target="#DataAnalystInternship">Show More</button>
+							<img class="thumb-sm" src="./images/sql-database.png" alt="">
+							<!-- Below you can add multiple icon only copy above <img> -->
+						</div>
 					</div>
-				</div> -->
+				</div>
 			</div>
 		</div>
 	</section>
@@ -452,7 +458,11 @@
 	</section>
 	<!-- Github section -->
 	<section class="small-device-padding ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
-		<div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
+		<div class="ftco-section ftco-hireme img margin-top">
+			<video autoplay loop muted playsinline style="position: absolute;transform: translate(-50%, -50%);">
+				<source src="/videos/techvdo.mp4" type="video/mp4">
+				Your browser does not support the video tag.
+			</video>
 			<!-- <div class="container"> -->
 			<div class="row justify-content-center">
 				<div class="col-md-7 ftco-animate text-center">
@@ -479,25 +489,28 @@
 				<!-- PDF as Image Display with Click Event -->
 				<div class="col-md-4 text-center">
 					<figure class="figure">
-						<canvas class="pdfCanvas" data-file-path="images/_PwC Switzerland_completion_certificate.pdf" style="max-width: 100%; height: auto; cursor: pointer;"></canvas>
+						<a href="images/_PwC Switzerland_completion_certificate_page-0001.jpg" class="image-popup">
+							<img class="dJpgImage" src="images/_PwC Switzerland_completion_certificate_page-0001.jpg" />
+						</a>
 						<figcaption class="figure-caption">A caption for the above image.</figcaption>
 					</figure>
 				</div>
-				<!-- JPG Image Display with Click Event -->
 				<div class="col-md-4 text-center">
 					<figure class="figure">
-						<img class="jpgImage" data-file-path="images/python_nptel.jpg" src="images/python_nptel.jpg" style="max-width: 100%; height: auto; cursor: pointer;" onclick="showEnlargedView('jpg')" />
-						<!-- <img class="rounded-lg" id="jpgImage" src="images/python_nptel.jpg" style="max-width: 100%; height: auto; cursor: pointer;" onclick="showEnlargedView('jpg')" /> -->
+						<a href="images/python_nptel.jpg" class="image-popup">
+							<img class="dJpgImage" src="images/python_nptel.jpg" />
+						</a>
 						<figcaption class="figure-caption">A caption for the above image.</figcaption>
 					</figure>
 				</div>
-				<!-- JPG Image Display with Click Event -->
 				<div class="col-md-4 text-center">
 					<figure class="figure">
-						<img class="jpgImage" data-file-path="images/life.jpg" src="images/life.jpg" style="max-width: 100%; height: auto; cursor: pointer;" onclick="showEnlargedView('jpg')" />
+						<a href="images/life.jpg" class="image-popup">
+							<img class="dJpgImage" src="images/life.jpg" />
+						</a>
 						<figcaption class="figure-caption">A caption for the above image.</figcaption>
 					</figure>
-				</div>
+				</div>				
 			</div>
 		</div>
 	</section>
@@ -636,8 +649,8 @@
 						<div class="col-6">
 							<div class="row">
 								<div class="col-12">
-									<div id="pizzasImageSlider" class="carousel slide" data-ride="carousel" data-interval="false">
-										<div  id="pizzasCarouselItems" class="carousel-inner">
+									<div id="pizzasImageSlider" class="carousel slide" data-ride="carousel" >
+										<div id="pizzasCarouselItems" class="carousel-inner">
 											<!-- Dynamic items will be inserted here -->
 										</div>
 										<a class="carousel-control-prev" href="#pizzasImageSlider" role="button" data-slide="prev">
@@ -651,7 +664,7 @@
 									</div>
 								</div>
 								<div class="col-12">
-									<div id="amazonImageSlider" class="carousel slide" data-ride="carousel" data-interval="false">
+									<div id="amazonImageSlider" class="carousel slide" data-ride="carousel" >
 										<div class="carousel-inner" id="amazonCarouselItems">
 											<!-- Dynamic items will be inserted here -->
 										</div>
@@ -721,15 +734,15 @@
 							<div class="row">
 								<!-- First image slider -->
 								<div class="col-12">
-									<div id="pizzasImageSlider" class="carousel slide" data-ride="carousel" data-interval="false">
-										<div  id="pizzasCarouselItems" class="carousel-inner">
+									<div id="netflixExploratory" class="carousel slide" data-ride="carousel" >
+										<div class="carousel-inner">
 											<!-- Dynamic items will be inserted here -->
 										</div>
-										<a class="carousel-control-prev" href="#pizzasImageSlider" role="button" data-slide="prev">
+										<a class="carousel-control-prev" href="#netflixExploratory" role="button" data-slide="prev">
 											<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 											<span class="sr-only">Previous</span>
 										</a>
-										<a class="carousel-control-next" href="#pizzasImageSlider" role="button" data-slide="next">
+										<a class="carousel-control-next" href="#netflixExploratory" role="button" data-slide="next">
 											<span class="carousel-control-next-icon" aria-hidden="true"></span>
 											<span class="sr-only">Next</span>
 										</a>
@@ -737,15 +750,15 @@
 								</div>
 								<!-- Second image slider -->
 								<div class="col-12">
-									<div id="amazonImageSlider" class="carousel slide" data-ride="carousel" data-interval="false">
+									<div id="netflixExploratoryScnd" class="carousel slide" data-ride="carousel" >
 										<div class="carousel-inner" id="amazonCarouselItems">
 											<!-- Dynamic items will be inserted here -->
 										</div>
-										<a class="carousel-control-prev" href="#amazonImageSlider" role="button" data-slide="prev">
+										<a class="carousel-control-prev" href="#netflixExploratoryScnd" role="button" data-slide="prev">
 											<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 											<span class="sr-only">Previous</span>
 										</a>
-										<a class="carousel-control-next" href="#amazonImageSlider" role="button" data-slide="next">
+										<a class="carousel-control-next" href="#netflixExploratoryScnd" role="button" data-slide="next">
 											<span class="carousel-control-next-icon" aria-hidden="true"></span>
 											<span class="sr-only">Next</span>
 										</a>
@@ -796,22 +809,70 @@
 				</div>
 				<div class="modal-body">
 					<div class="row">
-						<div class="col-6">Description</div>
 						<div class="col-6">
-							<div id="amazonImageSlider" class="carousel slide" data-ride="carousel" data-interval="false">
-								<div class="carousel-inner" id="amazonCarouselItems">
-									<!-- Dynamic items will be inserted here -->
+							<p>
+								Chetan grew up in a traditional Punjabi Hindu family. His father served as a lieutenant colonel in the Indian Army, and his mother worked as a scientist in Indian Agricultural Research Institute, New Delhi. He attended the Army Public School, Dhaula Kuan,[3] where he developed a passion for writing while authoring jokes for the school magazine.[4]Bhagat graduated with a B.Tech. degree in Mechanical Engineering from the Indian Institute of Technology, Delhi in 1995.[5] Bhagat would then attend the Indian Institute of Management, Ahmedabad (IIMA), graduating in 1997 with a degree in Business Administration with an emphasis in marketing.[6][7] In June 2018, IIMA awarded him the "Young Alumni Achiever's Awards 2018" in the Art & Entertainment category.
+							</p>
+							<a href="https://github.com/ankit-7050"><img class="thumb-sm" src="./images/github-icon.png" alt=""> GitHub Link</a>
+							<h5 class="mt-3"><span class="text-warning">Domain - </span>Sales analysis</h5>
+						</div>
+						<div class="col-6">
+							<div class="row">
+								<div class="col-12">
+									<div id="amazonSales" class="carousel slide" data-ride="carousel" >
+										<div class="carousel-inner">
+											<!-- Dynamic items will be inserted here -->
+										</div>
+										<a class="carousel-control-prev" href="#amazonSales" role="button" data-slide="prev">
+											<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+											<span class="sr-only">Previous</span>
+										</a>
+										<a class="carousel-control-next" href="#amazonSales" role="button" data-slide="next">
+											<span class="carousel-control-next-icon" aria-hidden="true"></span>
+											<span class="sr-only">Next</span>
+										</a>
+									</div>
 								</div>
-								<a class="carousel-control-prev" href="#amazonImageSlider" role="button" data-slide="prev">
-									<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-									<span class="sr-only">Previous</span>
-								</a>
-								<a class="carousel-control-next" href="#amazonImageSlider" role="button" data-slide="next">
-									<span class="carousel-control-next-icon" aria-hidden="true"></span>
-									<span class="sr-only">Next</span>
-								</a>
+								<div class="col-12">
+									<div id="amazonSalesScnd" class="carousel slide" data-ride="carousel" >
+										<div class="carousel-inner" id="amazonCarouselItems">
+											<!-- Dynamic items will be inserted here -->
+										</div>
+										<a class="carousel-control-prev" href="#amazonSalesScnd" role="button" data-slide="prev">
+											<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+											<span class="sr-only">Previous</span>
+										</a>
+										<a class="carousel-control-next" href="#amazonSalesScnd" role="button" data-slide="next">
+											<span class="carousel-control-next-icon" aria-hidden="true"></span>
+											<span class="sr-only">Next</span>
+										</a>
+									</div>
+								</div>
 							</div>
 						</div>						
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<h2>Project Details</h2>
+							<hr class="border-warning">
+							<ul class="list-unstyled">
+								<li>Lorem ipsum dolor sit amet</li>
+								<li>Consectetur adipiscing elit</li>
+								<li>Integer molestie lorem at massa</li>
+								<li>Facilisis in pretium nisl aliquet</li>
+								<li>Nulla volutpat aliquam velit
+								<ul>
+									<li>Phasellus iaculis neque</li>
+									<li>Purus sodales ultricies</li>
+									<li>Vestibulum laoreet porttitor sem</li>
+									<li>Ac tristique libero volutpat at</li>
+								</ul>
+								</li>
+								<li>Faucibus porta lacus fringilla vel</li>
+								<li>Aenean sit amet erat nunc</li>
+								<li>Eget porttitor lorem</li>
+							</ul>
+						</div>
 					</div>
 				</div>
 				<div class="modal-footer">
@@ -830,7 +891,72 @@
 					<h4 class="modal-title">Project Description</h4>
 				</div>
 				<div class="modal-body">
-					<p class="text-body">VehicleCollision</p>
+					<div class="row">
+						<div class="col-6">
+							<p>
+								Chetan grew up in a traditional Punjabi Hindu family. His father served as a lieutenant colonel in the Indian Army, and his mother worked as a scientist in Indian Agricultural Research Institute, New Delhi. He attended the Army Public School, Dhaula Kuan,[3] where he developed a passion for writing while authoring jokes for the school magazine.[4]Bhagat graduated with a B.Tech. degree in Mechanical Engineering from the Indian Institute of Technology, Delhi in 1995.[5] Bhagat would then attend the Indian Institute of Management, Ahmedabad (IIMA), graduating in 1997 with a degree in Business Administration with an emphasis in marketing.[6][7] In June 2018, IIMA awarded him the "Young Alumni Achiever's Awards 2018" in the Art & Entertainment category.
+							</p>
+							<a href="https://github.com/ankit-7050"><img class="thumb-sm" src="./images/github-icon.png" alt=""> GitHub Link</a>
+							<h5 class="mt-3"><span class="text-warning">Domain - </span>Sales analysis</h5>
+						</div>
+						<div class="col-6">
+							<div class="row">
+								<div class="col-12">
+									<div id="vehicleCollision" class="carousel slide" data-ride="carousel" >
+										<div class="carousel-inner">
+											<!-- Dynamic items will be inserted here -->
+										</div>
+										<a class="carousel-control-prev" href="#vehicleCollision" role="button" data-slide="prev">
+											<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+											<span class="sr-only">Previous</span>
+										</a>
+										<a class="carousel-control-next" href="#vehicleCollision" role="button" data-slide="next">
+											<span class="carousel-control-next-icon" aria-hidden="true"></span>
+											<span class="sr-only">Next</span>
+										</a>
+									</div>
+								</div>
+								<div class="col-12">
+									<div id="vehicleCollisionScnd" class="carousel slide" data-ride="carousel" >
+										<div class="carousel-inner" id="amazonCarouselItems">
+											<!-- Dynamic items will be inserted here -->
+										</div>
+										<a class="carousel-control-prev" href="#vehicleCollisionScnd" role="button" data-slide="prev">
+											<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+											<span class="sr-only">Previous</span>
+										</a>
+										<a class="carousel-control-next" href="#vehicleCollisionScnd" role="button" data-slide="next">
+											<span class="carousel-control-next-icon" aria-hidden="true"></span>
+											<span class="sr-only">Next</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>						
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<h2>Project Details</h2>
+							<hr class="border-warning">
+							<ul class="list-unstyled">
+								<li>Lorem ipsum dolor sit amet</li>
+								<li>Consectetur adipiscing elit</li>
+								<li>Integer molestie lorem at massa</li>
+								<li>Facilisis in pretium nisl aliquet</li>
+								<li>Nulla volutpat aliquam velit
+								<ul>
+									<li>Phasellus iaculis neque</li>
+									<li>Purus sodales ultricies</li>
+									<li>Vestibulum laoreet porttitor sem</li>
+									<li>Ac tristique libero volutpat at</li>
+								</ul>
+								</li>
+								<li>Faucibus porta lacus fringilla vel</li>
+								<li>Aenean sit amet erat nunc</li>
+								<li>Eget porttitor lorem</li>
+							</ul>
+						</div>
+					</div>
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-default text-white" data-dismiss="modal">Close</button>
@@ -848,7 +974,72 @@
 					<h4 class="modal-title">Project Description</h4>
 				</div>
 				<div class="modal-body">
-					<p class="text-body">IndiaCrop</p>
+					<div class="row">
+						<div class="col-6">
+							<p>
+								Chetan grew up in a traditional Punjabi Hindu family. His father served as a lieutenant colonel in the Indian Army, and his mother worked as a scientist in Indian Agricultural Research Institute, New Delhi. He attended the Army Public School, Dhaula Kuan,[3] where he developed a passion for writing while authoring jokes for the school magazine.[4]Bhagat graduated with a B.Tech. degree in Mechanical Engineering from the Indian Institute of Technology, Delhi in 1995.[5] Bhagat would then attend the Indian Institute of Management, Ahmedabad (IIMA), graduating in 1997 with a degree in Business Administration with an emphasis in marketing.[6][7] In June 2018, IIMA awarded him the "Young Alumni Achiever's Awards 2018" in the Art & Entertainment category.
+							</p>
+							<a href="https://github.com/ankit-7050"><img class="thumb-sm" src="./images/github-icon.png" alt=""> GitHub Link</a>
+							<h5 class="mt-3"><span class="text-warning">Domain - </span>Sales analysis</h5>
+						</div>
+						<div class="col-6">
+							<div class="row">
+								<div class="col-12">
+									<div id="indiaCrop" class="carousel slide" data-ride="carousel" >
+										<div id="pizzasCarouselItems" class="carousel-inner">
+											<!-- Dynamic items will be inserted here -->
+										</div>
+										<a class="carousel-control-prev" href="#indiaCrop" role="button" data-slide="prev">
+											<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+											<span class="sr-only">Previous</span>
+										</a>
+										<a class="carousel-control-next" href="#indiaCrop" role="button" data-slide="next">
+											<span class="carousel-control-next-icon" aria-hidden="true"></span>
+											<span class="sr-only">Next</span>
+										</a>
+									</div>
+								</div>
+								<div class="col-12">
+									<div id="indiaCropScnd" class="carousel slide" data-ride="carousel" >
+										<div class="carousel-inner" id="amazonCarouselItems">
+											<!-- Dynamic items will be inserted here -->
+										</div>
+										<a class="carousel-control-prev" href="#indiaCropScnd" role="button" data-slide="prev">
+											<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+											<span class="sr-only">Previous</span>
+										</a>
+										<a class="carousel-control-next" href="#indiaCropScnd" role="button" data-slide="next">
+											<span class="carousel-control-next-icon" aria-hidden="true"></span>
+											<span class="sr-only">Next</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>						
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<h2>Project Details</h2>
+							<hr class="border-warning">
+							<ul class="list-unstyled">
+								<li>Lorem ipsum dolor sit amet</li>
+								<li>Consectetur adipiscing elit</li>
+								<li>Integer molestie lorem at massa</li>
+								<li>Facilisis in pretium nisl aliquet</li>
+								<li>Nulla volutpat aliquam velit
+								<ul>
+									<li>Phasellus iaculis neque</li>
+									<li>Purus sodales ultricies</li>
+									<li>Vestibulum laoreet porttitor sem</li>
+									<li>Ac tristique libero volutpat at</li>
+								</ul>
+								</li>
+								<li>Faucibus porta lacus fringilla vel</li>
+								<li>Aenean sit amet erat nunc</li>
+								<li>Eget porttitor lorem</li>
+							</ul>
+						</div>
+					</div>
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-default text-white" data-dismiss="modal">Close</button>
