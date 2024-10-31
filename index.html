@@ -1,300 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Ankit Kumar Portfolio</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
-    <link rel="stylesheet" href="css/animate.css">
-    
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
+<head>
+	<title>Ankit Kumar Portfolio</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" href="css/aos.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/ionicons.min.css">
-    
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/icomoon.css">
-    <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+	<link rel="stylesheet" href="css/animate.css">
 
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
 
+	<link rel="stylesheet" href="css/aos.css">
 
-<style>
+	<link rel="stylesheet" href="css/ionicons.min.css">
 
-/*======================================
-//--//-->   ABOUT
-======================================*/
+	<link rel="stylesheet" href="css/flaticon.css">
+	<link rel="stylesheet" href="css/icomoon.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.9.359/pdf.min.js"></script>
+</head>
 
-.about-mf .box-shadow-full {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-}
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 
-.about-mf .about-img {
-  margin-bottom: 2rem;
-}
+	<!-- Nav bar -->
+	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+		<div class="container">
+			<a class="navbar-brand" href="index.html">Ankit Kumar</a>
+			<button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse"
+				data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="oi oi-menu"></span> Menu
+			</button>
 
-.about-mf .about-img img {
-  margin-left: 10px;
-}
-
-
-.skill-mf .progress {
-  /* background-color: #cde1f8; */
-  margin: .5rem 0 1.2rem 0;
-  border-radius: 0;
-  height: .7rem;
-}
-
-.skill-mf .progress .progress-bar {
-  height: .7rem;
-  background-color: #ffbd39;
-}
-
-
-/* Animation styles */
-#typing-animation {
-  position: relative;
-  font-size: 30px;
-  font-weight: bold;
-  color: rgb(255, 255, 255);
-  overflow: hidden;
-  white-space: nowrap;
-  animation: typing 3s steps(20, end) infinite;
-}
-
-#typing-animation:before {
-  content: "";
-  /* position: absolute; */
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  background-color: #ccc;
-  animation: typing-cursor 0.5s ease-in-out infinite;
-}
-
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-@keyframes typing-cursor {
-  from {
-    width: 5px;
-  }
-  to {
-    width: 0;
-  }
-}
-
-
-/* project image zoom effect */
-
-.zoom-effect {
-  overflow: hidden;
-  transition: transform 0.3s ease-out;
-}
-
-.zoom-effect:hover {
-  transform: scale(1.1);
-}
-
-
-</style>
-
-
-  </head>
-  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-	  
-	  
-    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
-	    <div class="container">
-	      <a class="navbar-brand" href="index.html">Ankit  Kumar</a>
-	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-	        <span class="oi oi-menu"></span> Menu
-	      </button>
-
-	      <div class="collapse navbar-collapse" id="ftco-nav">
-	        <ul class="navbar-nav nav ml-auto">
-	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
-	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
-	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
-	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
-	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
-	        </ul>
-	      </div>
-	    </div>
-	  </nav>
-	  <section id="home-section" class="hero">
-		  <div class="home-slider  owl-carousel">
-	       <div class="slider-item ">
-	      	<div class="overlay"></div>
-	         <div class="container">
-	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-	          	<!-- <div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bg_1.png);">
+			<div class="collapse navbar-collapse" id="ftco-nav">
+				<ul class="navbar-nav nav ml-auto">
+					<li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+					<li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+					<li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+					<li class="nav-item"><a href="#experience-section" class="nav-link"><span>Experience</span></a></li>
+					<li class="nav-item"><a href="#education-section" class="nav-link"><span>Education<span></a></li>
+					<li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+					<li class="nav-item"><a href="#certification-section" class="nav-link"><span>Certification</span></a></li>
+					<li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- Home section -->
+	<section id="home-section" class="hero">
+		<div class="home-slider  owl-carousel">
+			<div class="slider-item ">
+				<div class="overlay"></div>
+				<div class="container">
+					<div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end"
+						data-scrollax-parent="true">
+						<!-- <div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bg_1.png);">
 	          	 <div class="overlay"></div>
 	          	</div> -->
-		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-		          	<div class="text">
-		          		<span class="subheading">Hello! </span>
-			            <h1 class="mb-4 mt-3">I'm <span>Ankit Kumar</span></h1>
+						<div class="one-forth d-flex  align-items-center ftco-animate"
+							data-scrollax=" properties: { translateY: '70%' }">
+							<div class="text">
+								<span class="subheading">Hello! </span>
+								<h1 class="mb-4 mt-3">I'm <span>Ankit Kumar</span></h1>
 
-						<!-- Element to contain animated typing -->
-						<span id="typing-animation"></span>
+								<!-- Element to contain animated typing -->
+								<span id="typing-animation"></span>
 
-						<script>
+								<script>
 
-						// Initialize the typing animation
-						const typingAnimationElement = document.getElementById('typing-animation');
+									// Initialize the typing animation
+									const typingAnimationElement = document.getElementById('typing-animation');
 
-						// Create an array of typing text
-						const typingTexts = [
-						'Data Analyst Enthusiast   ',
-						'MIS Executive   ',
-						'Power BI/Tableau Developer   ',
-						'Business Analyst   ',
-						'Fresher   ',
-						
-						];
+									// Create an array of typing text
+									const typingTexts = [
+										'Data Analyst Enthusiast   ',
+										'MIS Executive   ',
+										'Power BI/Tableau Developer   ',
+										'Business Analyst   ',
+										'Fresher   ',
 
-						// Create a function to display the typing animation for a given text
-						function playTypingAnimation(text) {
-						// Loop through each character and add it to the element
-						for (let i = 0; i < text.length; i++) {
-							setTimeout(() => {
-							typingAnimationElement.textContent += text[i];
-							}, i * 200); // Increase the delay to slow down the typing animation
-						}
+									];
 
-						// Once the animation is complete, reset the text and start over
-						setTimeout(() => {
-							typingAnimationElement.textContent = '';
-							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
-						}, text.length * 200);
-						}
+									// Create a function to display the typing animation for a given text
+									function playTypingAnimation(text) {
+										// Loop through each character and add it to the element
+										for (let i = 0; i < text.length; i++) {
+											setTimeout(() => {
+												typingAnimationElement.textContent += text[i];
+											}, i * 200); // Increase the delay to slow down the typing animation
+										}
 
-						// Start the typing animation loop
-						playTypingAnimation(typingTexts[0]);
+										// Once the animation is complete, reset the text and start over
+										setTimeout(() => {
+											typingAnimationElement.textContent = '';
+											playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+										}, text.length * 200);
+									}
 
-						</script>
+									// Start the typing animation loop
+									playTypingAnimation(typingTexts[0]);
 
-						<br>
-						<br>
-			            <h2>A Data Analyst</h2>
-						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
-						<!-- <br> -->
-			            <p><a href="https://www.linkedin.com/in/ankit-kumar-b4615417b/" class="btn btn-primary py-3 px-4">LinkedIn</a> 
-							<a href="https://github.com/ankit-7050" class="btn btn-white btn-outline-white py-3 px-4">GitHub</a></p>
-		            </div>
-		          </div>
-	        	</div>
-	        </div>
-	      </div>
+								</script>
+
+								<br>
+								<br>
+								<h2>A Data Analyst</h2>
+								<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
+								<!-- <br> -->
+								<div><a href="https://www.linkedin.com/in/ankit-kumar-b4615417b/"class="btn btn-primary py-3 px-4">LinkedIn</a>
+									<a href="https://github.com/ankit-7050" class="btn btn-white btn-outline-white py-3 px-4">GitHub</a>
+									<a href="https://drive.google.com/file/d/1kFV7VJLD4GpxHkXkZODhvHe-697euuja/view?usp=sharing" class="btn btn-white btn-outline-white py-3 px-4">Resume</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
-    </section>
-
-
-
-    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
-    	<div class="container">
+	</section>
+	<!-- About section -->
+	<section class="small-device-padding ftco-about img ftco-section ftco-no-pb" id="about-section">
+		<div class="container">
 			<div class="row">
 				<div class="row d-flex align-items-stretch">
-				<!-- <div class="row d-flex"> -->
+					<!-- <div class="row d-flex"> -->
 					<div class="col-md-6 col-lg-5 d-flex">
 						<div class="img-about img d-flex align-items-stretch">
 							<div class="overlay">
-								<div class="row">
+								<div class="row align-items-center">
 									<div class="col-sm-6 col-md-5">
-									  <div class="about-img">
-										<img src="images/about-me.png" class="img-fluid rounded b-shadow-a" alt="">
-									  </div>
+										<div class="about-img">
+											<img src="images/about-me.png" class="rounded-circle b-shadow-a" alt="" height="180" width="180" style="object-fit: fill;">
+										</div>
 									</div>
 									<!-- Details next to profile image -->
 									<div class="col-sm-6 col-md-7">
-									  <div class="about-info">
-										<p><span class="title-s">Name: </span> <span>Ankit Kumar</span></p>
-										<p><span class="title-s">Job Role: </span> <span> Data Analyst</span></p>
-										<!-- <p><span class="title-s">Experience: </span> <span>5 Years 3 Months</span></p> -->
-										<p><span class="title-s">Address: </span> <span> Hyderabad, India</span></p>
-									  </div>
+										<div class="about-info">
+											<p><span class="title-s">Name: </span> <span>Ankit Kumar</span></p>
+											<p><span class="title-s">Job Role: </span> <span> Data Analyst</span></p>
+											<!-- <p><span class="title-s">Experience: </span> <span>5 Years 3 Months</span></p> -->
+											<p><span class="title-s">Address: </span> <span> Hyderabad, India</span></p>
+										</div>
 									</div>
-								  </div>
+								</div>
 
 								<div class="skill-mf">
 									<p class="title-s">Skills</p>
 									<span>SQL</span> <span class="pull-right">80%</span>
 									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="75" aria-valuemin="0"
-											aria-valuemax="100"></div>
+										<div class="progress-bar" role="progressbar" style="width: 80%;"
+											aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
 									</div>
-									
+
 									<span>PYTHON</span> <span class="pull-right">70%</span>
 									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0"
-											aria-valuemax="100"></div>
+										<div class="progress-bar" role="progressbar" style="width: 70%"
+											aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
 									</div>
-									
+
 									<span>Data Visualization</span> <span class="pull-right">80%</span>
 									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
-											aria-valuemax="100"></div>
+										<div class="progress-bar" role="progressbar" style="width: 80%"
+											aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
 									</div>
-									
+
 									<span> Power BI</span> <span class="pull-right">80%</span>
 									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
-											aria-valuemax="100"></div>
+										<div class="progress-bar" role="progressbar" style="width: 80%"
+											aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
 									</div>
-									
+
 									<span>Excel</span> <span class="pull-right">80%</span>
 									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="70" aria-valuemin="0"
-											aria-valuemax="100"></div>
+										<div class="progress-bar" role="progressbar" style="width: 80%"
+											aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
 									</div>
 									<span>Tableau</span> <span class="pull-right">70%</span>
 									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0"
-											aria-valuemax="100"></div>
+										<div class="progress-bar" role="progressbar" style="width: 70%"
+											aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-					
+
 					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
 						<div class="row justify-content-start pb-3">
 							<div class="col-md-12 heading-section ftco-animate">
-								
+
 								<!-- <h1 class="big">About</h1> -->
 								<h2 class="mb-4">About Me</h2>
-								
-								<p>I am a passionate and driven data enthusiast with a strong foundation in Statistical Analysis, Data Visualization, and  Data Cleaning techniques. 
-									My academic background in Computer Science has equipped me with the necessary skills to extract valuable insights from data and translate them into actionable recommendations. 
-									As a recent graduate, I am eager to apply my knowledge and contribute to meaningful projects in the field of data analytics.
+
+								<p>I am a passionate and driven data enthusiast with a strong foundation in Statistical
+									Analysis, Data Visualization, and Data Cleaning techniques.
+									My academic background in Computer Science has equipped me with the necessary skills
+									to extract valuable insights from data and translate them into actionable
+									recommendations.
+									As a recent graduate, I am eager to apply my knowledge and contribute to meaningful
+									projects in the field of data analytics.
 								</p>
 								<ul class="about-info mt-4 px-md-0 px-2">
-									<li class="d-flex"><span>Profile:</span> <span>Data Science &amp; Analytics</span></li>
+									<li class="d-flex"><span>Profile:</span> <span>Data Science &amp; Analytics</span>
+									</li>
 									<!-- <li class="d-flex"><span>Domain:</span> <span>Retail, Ecommerce, BFSI &amp; Digital Marketing</span></li> -->
-									<li class="d-flex"><span>Education:</span> <span>Master of Computer Application</span></li>
-									<li class="d-flex"><span>Programming Languages:</span> <span>SQL, Python &amp; R</span></li>
-									<li class="d-flex"><span>Frameworks:</span> <span>Pandas, Numpy, Matplotlib &amp; Seaborn</span></li>
-									<li class="d-flex"><span>Tools:</span> <span>Microsoft Power BI, MS Excel, MySql, Tableau &amp; MS PowerPoint</span></li>
-									<li class="d-flex"><span>Technical Skills:</span> <span>Data Cleaning, Data Visualization, Data Management,Data Analysis &amp; Data Quality</span></li>
+									<li class="d-flex"><span>Education:</span> <span>Master of Computer
+											Application</span></li>
+									<li class="d-flex"><span>Programming Languages:</span> <span>SQL, Python &amp;
+											R</span></li>
+									<li class="d-flex"><span>Frameworks:</span> <span>Pandas, Numpy, Matplotlib &amp;
+											Seaborn</span></li>
+									<li class="d-flex"><span>Tools:</span> <span>Microsoft Power BI, MS Excel, MySql,
+											Tableau &amp; MS PowerPoint</span></li>
+									<li class="d-flex"><span>Technical Skills:</span> <span>Data Cleaning, Data
+											Visualization, Data Management,Data Analysis &amp; Data Quality</span></li>
 									<li class="d-flex"><span>Language:</span> <span>English, Hindi</span></li>
-									
-									
-									<li class="d-flex"><span>Interest:</span> <span>Exploring new technologies, Chess</span></li>
-									
+
+
+									<li class="d-flex"><span>Interest:</span> <span>Exploring new technologies,
+											Chess</span></li>
+
 								</ul>
 							</div>
 						</div>
@@ -306,373 +235,666 @@
 									<span class="number" data-number="25">0</span> <span>+</span>
 									<span>&nbsp; Projects completed</span>
 								</p>
-								<p><a href="https://github.com/ankit-7050" class="btn btn-primary py-3 px-3">Github</a></p>
+								<p><a href="https://github.com/ankit-7050" class="btn btn-primary py-3 px-3">Github</a>
+								</p>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-    </section>
-
-
-
-	
-    <section class="ftco-section ftco-no-pb" id="resume-section">
-    	<div class="container">
-    		<div class="row justify-content-center pb-5">
-          <div class="col-md-10 heading-section text-center ftco-animate">
-          	<!-- <h1 class="big big-2">Resume</h1> -->
-            <h2 class="mb-4">Resume</h2>
-            <!-- <p>Seasoned Senior Data Analyst with  of experience driving business strategies through data-driven insights. Proven expertise in data science, statistical analysis, machine learning algorithms and project management.</p> -->
-			<div class="row justify-content-center mt-5">
-    			<div class="col-md-6 text-center ftco-animate">
-    				<p><a href="https://drive.google.com/file/d/1kFV7VJLD4GpxHkXkZODhvHe-697euuja/view?usp=sharing" class="btn btn-primary py-4 px-5">Download CV</a></p>
-    			</div>
-    		</div>
-          </div>
-        </div>
-
-		<div class="row">
-			<h1 class="big-4">Experience</h1>
-			<div class="underline"></div>
-		</div>
-		<br>
-		
-		<div class="row">
+	</section>
+	<!-- Resume section -->
+	<section class="small-device-padding ftco-section ftco-no-pb" id="resume-section">
+		<div class="container">
+			<div class="row justify-content-center pb-5">
+				<div class="col-md-12 heading-section text-center ftco-animate">
+					<!-- <h1 class="big big-2">Resume</h1> -->
+					<h2 class="mb-4">Resume</h2>
+					<div class="underline"></div>
+					<p class="py-2">Write here your own desc.</p>
+					<!-- <p>Seasoned Senior Data Analyst with  of experience driving business strategies through data-driven insights. Proven expertise in data science, statistical analysis, machine learning algorithms and project management.</p> -->
+					<div class="row justify-content-center mt-5">
+						<div class="col-md-6 text-center ftco-animate">
+							<p><a href="https://drive.google.com/file/d/1kFV7VJLD4GpxHkXkZODhvHe-697euuja/view?usp=sharing"
+									class="btn btn-primary py-4 px-5">Download CV</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+	</section>
+	<!-- Experience section -->
+	<section class="small-device-padding ftco-section ftco-no-pb" id="experience-section">
+		<div class="container">
+			<div class="row justify-content-center pb-5">
+				<div class="col-md-12 heading-section text-center ftco-animate">
+					<!-- <h1 class="big big-2">Resume</h1> -->
+					<h2 class="mb-4">Experience</h2>
+					<div class="underline"></div>
+				</div>
+			</div>
+			<div class="row">
 				<div class="col-md-6">
 					<div class="resume-wrap ftco-animate">
 						<span class="date">DEC 2023 - JAN 2024</span>
 						<h2>Data Analyst - Internship</h2>
 						<span class="position">Psyliq</span>
-						<p class="mt-4">Psyliq is internship specialist, connects job seekers with real-world projects and amazing data sets. It offers hands-on experiences to enhance your professional skills and help you kickstart your career. 
-							<ul>
-								<li>During my internship as a Data Analyst, I had the privilege to immerse myself in the world of real-world data analytics and make tangible contributions to the organization's objectives.</li>
-								<li>Over the course of the internship, I developed a robust skill set in data collection, cleaning, analysis, and visualization, utilizing tools such as SQL and Power BI.</li>
-								<li>Overall, my internship as a Data Analyst was a rewarding journey of exploration, learning, and growth. It equipped me with valuable skills and experiences that will undoubtedly serve as a strong foundation for my future endeavors in the field of data analytics.</li>
-							</ul>
+						<p class="project-description mt-4">Psyliq is internship specialist, connects job seekers with real-world projects
+							and amazing data sets. It offers hands-on experiences to enhance your professional skills
+							and help you kickstart your career.
+						<!-- <ul>
+							<li>During my internship as a Data Analyst, I had the privilege to immerse myself in the
+								world of real-world data analytics and make tangible contributions to the organization's
+								objectives.</li>
+							<li>Over the course of the internship, I developed a robust skill set in data collection,
+								cleaning, analysis, and visualization, utilizing tools such as SQL and Power BI.</li>
+							<li>Overall, my internship as a Data Analyst was a rewarding journey of exploration,
+								learning, and growth. It equipped me with valuable skills and experiences that will
+								undoubtedly serve as a strong foundation for my future endeavors in the field of data
+								analytics.</li>
+						</ul> -->
 						</p>
-					</div>
-
-				</div>
-
-				<!-- <div class="col-md-6">
-					<div class="resume-wrap ftco-animate">
-						<span class="date">2018-2021</span>
-						<h2>Senior Data Analyst</h2>
-						<span class="position">iQuanti</span>
-						<p class="mt-4">iQuanti is a data-driven digital marketing analytics and solutions company, helps top 100 global brands. 
-							<ul>
-								<li>Performed in-depth market research and analysis to create online pages. Resulted in ~100% website growth and 30% increase in conversion rate YoY.</li>
-								<li>Delivered multiple training and mentorship sessions on analytical tools like SQL, MS Excel, Power BI, Tableau and Python.</li>
-								<li>Performed migration and enhancements for merchandising dashboard, involved data integration and its feature improvement.</li>
-							</ul>
-						</p>
-					</div>
-
-				</div> -->
-			</div>
-
-		<br>
-		<br>
-
-		<div class="row">
-			<h1 class="big-4">Education</h1>
-			<div class="underline"></div>
-		</div>
-		<br>
-		
-			<div class="row">
-    			<div class="col-md-6">
-    				<div class="resume-wrap ftco-animate">
-    					<span class="date">2021-2023</span>
-    					<h2>Master of Computer Application</h2>
-    					<span class="position">Nims Institute of Engineering and Technology, NIMS University Jaipur</span>
-    					<p class="mt-4">Grade: 8.0 GPA</p>
-    				</div>
-    			</div>
-
-    			<div class="col-md-6">
-    				<div class="resume-wrap ftco-animate">
-    					<span class="date">2017-2020</span>
-    					<h2>Bachelor of Computer Application</h2>
-    					<span class="position">Maharshi Vishwamitra College Buxar, Veer Kunwar Singh University Ara, Bihar</span>
-    					<p class="mt-4">Marks: 73.74%.</p>
-    				</div>
-				</div>
-    		</div>
-
-    		<!-- <div class="row justify-content-center mt-5">
-    			<div class="col-md-6 text-center ftco-animate">
-    				<p><a href="#" class="btn btn-primary py-4 px-5">Download CV</a></p>
-    			</div>
-    		</div> -->
-    	</div>
-    </section>
-
-   
-
-    <section class="ftco-section" id="project-section">
-      <div class="container">
-        <div class="row justify-content-center mb-5 pb-5">
-          <div class="col-md-7 heading-section text-center ftco-animate">
-            <!-- <h1 class="big big-2">Hands-on Experience</h1> -->
-            <h2 class="mb-4">Hands-on Experience</h2>
-            <p>Below are the sample of Data Analytics projects on SQL, Python, Power BI & Excel.</p>
-          </div>
-        </div>
-        <div class="row d-flex">
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry justify-content-end">
-              <a href="https://github.com/ankit-7050/Pizzas-Sales-Data-Analysis-using-SQL.git" class="block-20 zoom-effect" style="background-image: url('images/pizza.jpg');">
-              </a>
-              <div class="text mt-3 float-right d-block">
-
-                <h3 class="heading"><a href="https://github.com/ankit-7050/Pizzas-Sales-Data-Analysis-using-SQL.git">Pizza Sales Data Analysis using SQL</a></h3>
-                <p>The objective of this project is to analyze pizza sales data to derive meaningful insights that can help optimize sales strategies, understand customer preferences, and improve overall business performance for a pizza sales.</p>
-				<!-- <ul>
-					<li> This project aims to provide actionable insights to improve business decision-making, enhance customer satisfaction, and drive revenue growth for the pizza sales.</li>
-					<li> Analyze basic statistics such as total sales revenue, average order value, most popular pizza types, etc.</li>
-					<li>Examine trends in pizza sales over time (daily, weekly, monthly). Identify peak hours/days of sales and seasonal variations.</li>
-				</ul> -->
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry justify-content-end">
-              <a href="https://github.com/ankit-7050/Netflix_Exploratory_Data_Analysis_using_Python.git" class="block-20 zoom-effect" style="background-image: url('images/netflix.png');">
-              </a>
-              <div class="text mt-3 float-right d-block">
-
-                <h3 class="heading"><a href="https://github.com/ankit-7050/Netflix_Exploratory_Data_Analysis_using_Python.git"> Netflix Exploratory Data Analysis & Visualization using Python </a></h3>
-                <p> In-depth Exploratory Data Analysis on Netflix shows to uncover patterns, trends, and insights using Python. Imported Netflix dataset and performed data cleaning to handle missing values, duplicates, and inconsistencies.
-Used libraries like Pandas for data manipulation and preprocessing.
-Created insightful visualizations using Matplotlib and Seaborn to illustrate trends in show genres, release years, and country-wise distributions. </p>
-		      <!-- <ul>
-					<li> This project aims to provide actionable insights to improve business decision-making, enhance customer satisfaction, and drive revenue growth for the pizza sales.</li>
-					<li> Analyze basic statistics such as total sales revenue, average order value, most popular pizza types, etc.</li>
-					<li>Examine trends in pizza sales over time (daily, weekly, monthly). Identify peak hours/days of sales and seasonal variations.</li>
-				</ul> -->
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry">
-              <a href="https://github.com/ankit-7050/Amazon_sales_analysis.git" class="block-20 zoom-effect" style="background-image: url('images/amazon.png');">
-              </a>
-              <div class="text mt-3 float-right d-block">
-
-                <h3 class="heading"><a href="https://github.com/ankit-7050/Amazon_sales_analysis.git"> Amazon Sales Data Analysis using Power BI </a></h3>
-                <p> The Amazon Data Sales Analysis project aims to analyze and derive insights from Amazon's vast sales data. By leveraging advanced data analytics techniques, the project seeks to understand customer behavior, sales trends, and product performance. The ultimate goal is to inform strategic decision-making processes and optimize various aspects of Amazon’s operations, such as inventory management, marketing strategies, and customer satisfaction. </p>
-				<!-- <ul>
-					<li>Explore key metrics such as total confirmed cases, deaths, and recoveries over time.</li>
-					<li>Visualize the spread of COVID-19 using maps to highlight areas with high infection rates.</li>
-					<li>This project aims to provide stakeholders with actionable insights to support informed decision-making, resource allocation, and public health interventions during the pandemic.</li>
-				</ul> -->
-              </div>
-            </div>
-          </div>
-        </div>
-	<br>
-		<!-- added justify-content-center to center align the last two projects -->
-		<div class="row d-flex justify-content-center">  
-			<div class="col-md-4 d-flex ftco-animate">
-				<div class="blog-entry justify-content-end">
-				<a href="https://github.com/ankit-7050/Vehicle-Collision-Analysis-Report-in-Excel.git" class="block-20 zoom-effect" style="background-image: url('images/vehicle.jpg');">
-				</a>
-				<div class="text mt-3 float-right d-block">
-  
-				  <h3 class="heading"><a href="https://github.com/ankit-7050/Vehicle-Collision-Analysis-Report-in-Excel.git">Vehicle Collision Data Analysis & Report using MS Excel</a></h3>
-				  <p>The objective of this project is to analyze vehicle collision data to identify patterns, trends, and contributing factors to accidents, and to visualize key insights for stakeholders such as transportation authorities.The analysis aims to improve road safety measures and reduce the frequency and severity of collisions.</p>
-				  <!-- <ul>
-					<li>Analyze basic statistics such as total number of collisions, distribution of collisions by severity, and frequency of collisions by time of day and day of week.</li>
-					<li>Analyze the relationship between road characteristics (e.g., intersections, curves) and collision frequency.</li>
-					<li>By identifying patterns and contributing factors to collisions, transportation authorities can take proactive measures to reduce the frequency and severity of accidents and ultimately save lives.</li>
-				</ul> -->
-				</div>
-			  </div>
-			</div>
-			<div class="col-md-4 d-flex ftco-animate">
-				<div class="blog-entry justify-content-end">
-				<a href="https://github.com/ankit-7050/India_Crop_Production.git" class="block-20 zoom-effect" style="background-image: url('images/crop.jpg');">
-				</a>
-				<div class="text mt-3 float-right d-block">
-  
-				  <h3 class="heading"><a href="https://github.com/ankit-7050/India_Crop_Production.git"> India's Crop Production Analysis using PowerBI</a></h3>
-				  <p> By leveraging Power BI for crop production data analysis, stakeholders can gain valuable insights into India's agricultural landscape. This project can help in making data-driven decisions, improving crop yields, and formulating effective agricultural policies. The interactive dashboards and reports created in Power BI will serve as a powerful tool for researchers, policymakers, and farmers alike. </p>
-				  <!-- <ul>
-					<li>Explore basic statistics such as average life expectancy, distribution across regions, and trends over time.</li>
-					<li>Analyze life expectancy disparities based on demographic factors such as gender, age group, and ethnicity.</li>
-					<li>By identifying factors influencing life expectancy and disparities across demographics and regions, decision-makers can implement targeted measures to improve overall population health and well-being.</li>
-				</ul> -->
-				</div>
-			  </div>
-			</div>
-		 </div>
-	  </div>
-    </section>
-
-	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
-      <!-- <div class="container">
-		<div class="row d-md-flex align-items-center">
-          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-            <div class="block-18">
-              <div class="text">
-                <strong class="number" data-number="20">0</strong>
-                <span>Achievements</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-            <div class="block-18">
-              <div class="text">
-                <strong class="number" data-number="30">0</strong>
-                <span>Projects</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-            <div class="block-18">
-              <div class="text">
-                <strong class="number" data-number="1000">0</strong>
-                <span>Mentored Students</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-            <div class="block-18">
-              <div class="text">
-                <strong class="number" data-number="500">0</strong>
-                <span>Cups of coffee</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> -->
-	
-	  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
-			<!-- <div class="container"> -->
-				<div class="row justify-content-center">
-					<div class="col-md-7 ftco-animate text-center">
-						<h2>More projects on<span> Github  </span> </h2>
-						<div class="heading"> <h4> I love to solve business problems &amp; uncover hidden data stories </h4>
-						<br>
-						<p><a href="https://github.com/ankit-7050" class="btn btn-primary py-3 px-5">GitHub</a></p>
+						<div class="d-flex justify-content-between">
+							<button type="button" class="btn rounded-lg btn-outline-warning shadow-none" data-toggle="modal" data-target="#DataAnalystInternship">Show More</button>
+							<img class="thumb-sm" src="./images/sql-database.png" alt="">
+							<!-- Below you can add multiple icon only copy above <img> -->
 						</div>
 					</div>
 				</div>
-			<!-- </div> -->
+				<!-- <div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">DEC 2023 - JAN 2024</span>
+						<h2>Data Analyst - Internship</h2>
+						<span class="position">Psyliq</span>
+						<p class="mt-4">Psyliq is internship specialist, connects job seekers with real-world projects
+							and amazing data sets. It offers hands-on experiences to enhance your professional skills
+							and help you kickstart your career.
+						<ul>
+							<li>During my internship as a Data Analyst, I had the privilege to immerse myself in the
+								world of real-world data analytics and make tangible contributions to the organization's
+								objectives.</li>
+							<li>Over the course of the internship, I developed a robust skill set in data collection,
+								cleaning, analysis, and visualization, utilizing tools such as SQL and Power BI.</li>
+							<li>Overall, my internship as a Data Analyst was a rewarding journey of exploration,
+								learning, and growth. It equipped me with valuable skills and experiences that will
+								undoubtedly serve as a strong foundation for my future endeavors in the field of data
+								analytics.</li>
+						</ul>
+						</p>
+					</div>
+				</div> -->
+			</div>
 		</div>
 	</section>
+	<!-- Education section -->
+	<section class="small-device-padding ftco-section ftco-no-pb" id="education-section">
+		<div class="container">
+			<div class="row justify-content-center pb-5">
+				<div class="col-md-12 heading-section text-center ftco-animate">
+					<h2 class="mb-4">Education</h2>
+					<div class="underline"></div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2021-2023</span>
+						<h2>Master of Computer Application</h2>
+						<span class="position">Nims Institute of Engineering and Technology, NIMS University
+							Jaipur</span>
+						<p class="mt-4">Grade: 8.0 GPA</p>
+					</div>
+				</div>
 
-
-
-    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
-      <div class="container">
-      	<div class="row justify-content-center mb-5 pb-3">
-          <div class="col-md-7 heading-section text-center ftco-animate">
-            <!-- <h1 class="big big-2">Contact</h1> -->
-            <h2 class="mb-4">Contact Me</h2>
-            <p>Below are the details to reach out to me!</p>
-          </div>
-        </div>
-
-        <div class="row d-flex contact-info mb-5">
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-map-signs"></span>
-          		</div>
-          		<h3 class="mb-4">Address</h3>
-	            <p>Hyderabad, India</p>
-	          </div>
-          </div>
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-phone2"></span>
-          		</div>
-          		<h3 class="mb-4">Contact Number</h3>
-	            <p><a href="tel://0101010101">+91 83065-46180</a></p>
-	          </div>
-          </div>
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-paper-plane"></span>
-					
-          		</div>
-          		<h3 class="mb-4">Email Address</h3>
-	            <p><a href="mailto:ankitsingh32565@gmail.com">ankitsingh32565@gmail.com</a></p>
-	          </div>
-          </div>
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-globe"></span>
-          		</div>
-          		<h3 class="mb-4">Download Resume</h3>
-	            <p><a href="https://drive.google.com/file/d/1kFV7VJLD4GpxHkXkZODhvHe-697euuja/view?usp=sharing">resumelink</a></p>
-	          </div>
-          </div>
-
-		  <div class="container">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2017-2020</span>
+						<h2>Bachelor of Computer Application</h2>
+						<span class="position">M.V. College Buxar, Veer Kunwar Singh University Ara,
+							Bihar</span>
+						<p class="mt-4">Marks: 73.74%.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Project section -->
+	<section class="small-device-padding ftco-section" id="project-section">
+		<div class="container mb-5">
+			<div class="row justify-content-center pb-5">
+				<div class="col-md-12 heading-section text-center ftco-animate">
+					<h2 class="mb-4">Hands-on Experience</h2>
+					<div class="underline"></div>
+					<p class="project-description text-center py-2">Below are the sample of Data Analytics projects on SQL, Python, Power BI & Excel.</p>
+				</div>
+			</div>
+			<div class="row d-flex">
+				<!-- Pizza sales section start-->
+				<div class="col-md-4 d-flex ftco-animate px-2">
+					<div class="blog-entry justify-content-end">
+						<a href="#!" data-toggle="modal" data-target="#PizzasSalesDataAnalysisUsingSql" class="block-20 zoom-effect" style="background-image: url('images/pizza.jpg');">
+						</a>
+						<div class="text mt-3 float-right d-block">
+							<h3 class="heading">Pizza Sales Data Analysis using SQL</h3>
+							<p class="project-description">The objective of this project is to analyze pizza sales data to derive meaningful insights that can help optimize sales strategies, understand customer preferences, and improve overall business performance for a pizza sales.</p>
+							<div class="d-flex justify-content-between">
+								<button type="button" class="btn rounded-lg btn-outline-warning shadow-none" data-toggle="modal" data-target="#PizzasSalesDataAnalysisUsingSql">See My Work</button>
+								<img class="thumb-sm" src="./images/sql-database.png" alt="">
+								<!-- Below you can add multiple icon only copy above <img> -->
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Pizza sales section end-->
+				<div class="col-md-4 d-flex ftco-animate px-2">
+					<div class="blog-entry justify-content-end">
+						<a href="#!" data-toggle="modal" data-target="#NetflixExploratory" class="block-20 zoom-effect" style="background-image: url('images/netflix.png');">
+						</a>
+						<div class="text mt-3 float-right d-block">
+							<h3 class="heading">Netflix Exploratory Data Analysis & Visualization using Python</h3>
+							<p class="project-description">In-depth Exploratory Data Analysis on Netflix shows to uncover patterns, trends, and insights using Python. Imported Netflix dataset and performed data cleaning to handle missing values, duplicates, and inconsistencies. Used libraries like Pandas for data manipulation and preprocessing. Created insightful visualizations using Matplotlib and Seaborn to illustrate trends in show genres, release years, and country-wise distributions.</p>
+							<div class="d-flex justify-content-between">
+								<button type="button" class="btn rounded-lg btn-outline-warning shadow-none" data-toggle="modal" data-target="#NetflixExploratory">See My Work</button>
+								<img class="thumb-sm" src="./images/python-icon.png" alt="">
+								<!-- Below you can add multiple icon only copy above <img> -->
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 d-flex ftco-animate px-2">
+					<div class="blog-entry">
+						<a href="#!"  data-toggle="modal" data-target="#AmazonSales" class="block-20 zoom-effect" style="background-image: url('images/amazon.png');">
+						</a>
+						<div class="text mt-3 float-right d-block">
+							<h3 class="heading">Amazon Sales Data Analysis using Power BI</h3>
+							<p class="project-description">The Amazon Data Sales Analysis project aims to analyze and derive insights from Amazon's vast sales data. By leveraging advanced data analytics techniques, the project seeks to understand customer behavior, sales trends, and product performance. The ultimate goal is to inform strategic decision-making processes and optimize various aspects of Amazon’s operations, such as inventory management, marketing strategies, and customer satisfaction.</p>
+							<div class="d-flex justify-content-between">
+								<button type="button" class="btn rounded-lg btn-outline-warning shadow-none" data-toggle="modal" data-target="#AmazonSales">See My Work</button>
+								<img class="thumb-sm" src="./images/power-icon.png" alt="">
+								<!-- Below you can add multiple icon only copy above <img> -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 			<br>
-			<br>
-			<!-- <div class="row justify-content-center">
+			<div class="row d-flex justify-content-center">
+				<div class="col-md-4 d-flex ftco-animate px-2">
+					<div class="blog-entry justify-content-end">
+						<a href="#!" data-toggle="modal" data-target="#VehicleCollision" class="block-20 zoom-effect" style="background-image: url('images/vehicle.jpg');"></a>
+						<div class="text mt-3 float-right d-block">
+							<h3 class="heading">Vehicle Collision Data Analysis & Report using MS Excel</h3>
+							<p class="project-description">The objective of this project is to analyze vehicle collision data to identify patterns, trends, and contributing factors to accidents, and to visualize key insights for stakeholders such as transportation authorities. The analysis aims to improve road safety measures and reduce the frequency and severity of collisions.</p>
+							<div class="d-flex justify-content-between">
+								<button type="button" class="btn rounded-lg btn-outline-warning shadow-none" data-toggle="modal" data-target="#VehicleCollision">See My Work</button>
+								<img class="thumb-sm" src="./images/excel-icon.png" alt="">
+								<!-- Below you can add multiple icon only copy above <img> -->
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 d-flex ftco-animate px-2">
+					<div class="blog-entry justify-content-end">
+						<a href="#!" data-toggle="modal" data-target="#IndiaCrop" class="block-20 zoom-effect" style="background-image: url('images/crop.jpg');"></a>
+						<div class="text mt-3 float-right d-block">
+							<h3 class="heading">India's Crop Production Analysis using PowerBI</h3>
+							<p class="project-description">By leveraging Power BI for crop production data analysis, stakeholders can gain valuable insights into India's agricultural landscape. This project can help in making data-driven decisions, improving crop yields, and formulating effective agricultural policies. The interactive dashboards and reports created in Power BI will serve as a powerful tool for researchers, policymakers, and farmers alike.</p>
+							<div class="d-flex justify-content-between">
+								<button type="button" class="btn rounded-lg btn-outline-warning shadow-none" data-toggle="modal" data-target="#IndiaCrop">See My Work</button>
+								<img class="thumb-sm" src="./images/power-icon.png" alt="">
+								<!-- Below you can add multiple icon only copy above <img> -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Github section -->
+	<section class="small-device-padding ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+		<div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
+			<!-- <div class="container"> -->
+			<div class="row justify-content-center">
+				<div class="col-md-7 ftco-animate text-center">
+					<h2>More projects on<span> Github </span> </h2>
+					<div class="heading">
+						<h4> I love to solve business problems &amp; uncover hidden data stories </h4>
+						<br>
+						<p><a href="https://github.com/ankit-7050" class="btn btn-primary py-3 px-5">GitHub</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Certification section -->
+	<section class="small-device-padding ftco-section ftco-no-pb" id="certification-section">
+		<div class="container">
+			<div class="row justify-content-center pb-5">
+				<div class="col-md-12 heading-section text-center ftco-animate">
+					<h2 class="mb-4">Certifications</h2>
+					<div class="underline"></div>
+				</div>
+			</div>
+			<div class="row">
+				<!-- PDF as Image Display with Click Event -->
+				<div class="col-md-4 text-center">
+					<figure class="figure">
+						<canvas class="pdfCanvas" data-file-path="images/_PwC Switzerland_completion_certificate.pdf" style="max-width: 100%; height: auto; cursor: pointer;"></canvas>
+						<figcaption class="figure-caption">A caption for the above image.</figcaption>
+					</figure>
+				</div>
+				<!-- JPG Image Display with Click Event -->
+				<div class="col-md-4 text-center">
+					<figure class="figure">
+						<img class="jpgImage" data-file-path="images/python_nptel.jpg" src="images/python_nptel.jpg" style="max-width: 100%; height: auto; cursor: pointer;" onclick="showEnlargedView('jpg')" />
+						<!-- <img class="rounded-lg" id="jpgImage" src="images/python_nptel.jpg" style="max-width: 100%; height: auto; cursor: pointer;" onclick="showEnlargedView('jpg')" /> -->
+						<figcaption class="figure-caption">A caption for the above image.</figcaption>
+					</figure>
+				</div>
+				<!-- JPG Image Display with Click Event -->
+				<div class="col-md-4 text-center">
+					<figure class="figure">
+						<img class="jpgImage" data-file-path="images/life.jpg" src="images/life.jpg" style="max-width: 100%; height: auto; cursor: pointer;" onclick="showEnlargedView('jpg')" />
+						<figcaption class="figure-caption">A caption for the above image.</figcaption>
+					</figure>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Contact section -->
+	<section class="small-device-padding ftco-section contact-section ftco-no-pb" id="contact-section">
+		<div class="container">
+			<div class="row justify-content-center pb-3">
+				<div class="col-md-12 heading-section text-center ftco-animate">
+					<!-- <h1 class="big big-2">Contact</h1> -->
+					<h2 class="mb-4">Contact Me</h2>
+					<div class="underline"></div>
+					<p class="py-2">Below are the details to reach out to me!</p>
+				</div>
+			</div>
+
+			<div class="row d-flex contact-info mb-5">
+				<div class="col-md-4 col-lg-4 d-flex ftco-animate">
+					<div class="align-self-stretch box p-4 text-center">
+						<div class="icon d-flex align-items-center justify-content-center">
+							<span class="icon-map-signs"></span>
+						</div>
+						<h3 class="mb-4">Address</h3>
+						<p style="font-weight: 500;color: white;">Hyderabad, India</p>
+					</div>
+				</div>
+				<div class="col-md-4 col-lg-4 d-flex ftco-animate">
+					<div class="align-self-stretch box p-4 text-center">
+						<div class="icon d-flex align-items-center justify-content-center">
+							<span class="icon-phone2"></span>
+						</div>
+						<h3 class="mb-4">Contact Number</h3>
+						<p><a href="tel:8306546180">+91 83065-46180</a></p>
+					</div>
+				</div>
+				<div class="col-md-4 col-lg-4 d-flex ftco-animate">
+					<div class="align-self-stretch box p-4 text-center">
+						<div class="icon d-flex align-items-center justify-content-center">
+							<span class="icon-paper-plane"></span>
+
+						</div>
+						<h3 class="mb-4">Email Address</h3>
+						<p><a href="mailto:ankitsingh32565@gmail.com">ankitsingh32565@gmail.com</a></p>
+					</div>
+				</div>
+				<!-- <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+					<div class="align-self-stretch box p-4 text-center">
+						<div class="icon d-flex align-items-center justify-content-center">
+							<span class="icon-globe"></span>
+						</div>
+						<h3 class="mb-4">Download Resume</h3>
+						<p><a
+								href="https://drive.google.com/file/d/1kFV7VJLD4GpxHkXkZODhvHe-697euuja/view?usp=sharing">resumelink</a>
+						</p>
+					</div>
+				</div> -->
+
+				<div class="container">
+					<br>
+					<br>
+					<!-- <div class="row justify-content-center">
 				<div class="col-md-7 ftco-animate text-center">
 					<h2>Have a<span> Question?  </span> <a href="https://forms.gle/uLaTShUKXraAvHJ77" class="btn btn-primary py-3 px-5">Click Here</a> </h2>
 				</div>
 			</div> -->
-				<br>
+					<br>
 					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
-					  <li class="ftco-animate normal-txt">Find me on  </li>
-					  <!-- <li class="ftco-animate"><a href="https://www.youtube.com/@RishabhMishraOfficial"><span class="icon-youtube"></span></a></li> -->
-					  <li class="ftco-animate"><a href="https://www.linkedin.com/in/ankit-kumar-b4615417b/"><span class="icon-linkedin"></span></a></li>  
-					  <li class="ftco-animate"><a href="https://github.com/ankit-7050"><span class="icon-github"></span></a></li>
-					  <!-- <li class="ftco-animate"><a href="https://twitter.com/rishabhnmishra"><span class="icon-facebook"></span></a></li> -->
-				      <!-- <li class="ftco-animate"><a href="https://www.instagram.com/rishabhnmishra/"><span class="icon-instagram"></span></a></li> -->
+						<li class="ftco-animate normal-txt">Find me on </li>
+						<!-- <li class="ftco-animate"><a href="https://www.youtube.com/@RishabhMishraOfficial"><span class="icon-youtube"></span></a></li> -->
+						<li class="ftco-animate"><a href="https://www.linkedin.com/in/ankit-kumar-b4615417b/"><span
+									class="icon-linkedin"></span></a></li>
+						<li class="ftco-animate"><a href="https://github.com/ankit-7050"><span
+									class="icon-github"></span></a></li>
+						<!-- <li class="ftco-animate"><a href="https://twitter.com/rishabhnmishra"><span class="icon-facebook"></span></a></li> -->
+						<!-- <li class="ftco-animate"><a href="https://www.instagram.com/rishabhnmishra/"><span class="icon-instagram"></span></a></li> -->
 					</ul>
-				<br>
-		   </div>
-   </div>
- </section>
-
-
- 
-	
-    <footer class="ftco-footer ftco-section">
-		<div class="container">
-		  <div class="row">
-			<div class="col-md-12 text-center">
-  
-			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-	<!-- Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a> -->
-	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+					<br>
+				</div>
 			</div>
-		  </div>
+	</section>
+	<!-- DataAnalystInternship Modal -->
+	<div id="DataAnalystInternship" class="modal fade" role="dialog">
+		<div class="modal-dialog modal-xl">
+			<!-- Modal content-->
+			<div class="modal-content bg-dark">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">About Internship</h4>
+				</div>
+				<div class="modal-body">
+					<p class="mt-4">Psyliq is internship specialist, connects job seekers with real-world projects
+						and amazing data sets. It offers hands-on experiences to enhance your professional skills
+						and help you kickstart your career.
+						<ul>
+							<li>During my internship as a Data Analyst, I had the privilege to immerse myself in the
+								world of real-world data analytics and make tangible contributions to the organization's
+								objectives.</li>
+							<li>Over the course of the internship, I developed a robust skill set in data collection,
+								cleaning, analysis, and visualization, utilizing tools such as SQL and Power BI.</li>
+							<li>Overall, my internship as a Data Analyst was a rewarding journey of exploration,
+								learning, and growth. It equipped me with valuable skills and experiences that will
+								undoubtedly serve as a strong foundation for my future endeavors in the field of data
+								analytics.</li>
+						</ul>
+					</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default text-white" data-dismiss="modal">Close</button>
+				</div>
+			</div>
 		</div>
-	  </footer>
+	</div>
+    <!-- Modal for Enlarged View -->
+    <div id="imageModal" class="modal" onclick="closeEnlargedView()">
+        <span class="close">&times;</span>
+        <canvas id="modalCanvas" style="display: none;"></canvas>
+        <img id="modalImage" style="display: none; max-width: 90%; max-height: 90%;" />
+    </div>
+	<!-- Modal -->
+	<div id="PizzasSalesDataAnalysisUsingSql" class="modal fade" role="dialog">
+		<div class="modal-dialog modal-xl">
+			<!-- Modal content-->
+			<div class="modal-content bg-dark">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">Project Description</h4>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						<div class="col-6">
+							<p>
+								Chetan grew up in a traditional Punjabi Hindu family. His father served as a lieutenant colonel in the Indian Army, and his mother worked as a scientist in Indian Agricultural Research Institute, New Delhi. He attended the Army Public School, Dhaula Kuan,[3] where he developed a passion for writing while authoring jokes for the school magazine.[4]Bhagat graduated with a B.Tech. degree in Mechanical Engineering from the Indian Institute of Technology, Delhi in 1995.[5] Bhagat would then attend the Indian Institute of Management, Ahmedabad (IIMA), graduating in 1997 with a degree in Business Administration with an emphasis in marketing.[6][7] In June 2018, IIMA awarded him the "Young Alumni Achiever's Awards 2018" in the Art & Entertainment category.
+							</p>
+							<a href="https://github.com/ankit-7050"><img class="thumb-sm" src="./images/github-icon.png" alt=""> GitHub Link</a>
+							<h5 class="mt-3"><span class="text-warning">Domain - </span>Sales analysis</h5>
+						</div>
+						<div class="col-6">
+							<div class="row">
+								<div class="col-12">
+									<div id="pizzasImageSlider" class="carousel slide" data-ride="carousel" data-interval="false">
+										<div  id="pizzasCarouselItems" class="carousel-inner">
+											<!-- Dynamic items will be inserted here -->
+										</div>
+										<a class="carousel-control-prev" href="#pizzasImageSlider" role="button" data-slide="prev">
+											<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+											<span class="sr-only">Previous</span>
+										</a>
+										<a class="carousel-control-next" href="#pizzasImageSlider" role="button" data-slide="next">
+											<span class="carousel-control-next-icon" aria-hidden="true"></span>
+											<span class="sr-only">Next</span>
+										</a>
+									</div>
+								</div>
+								<div class="col-12">
+									<div id="amazonImageSlider" class="carousel slide" data-ride="carousel" data-interval="false">
+										<div class="carousel-inner" id="amazonCarouselItems">
+											<!-- Dynamic items will be inserted here -->
+										</div>
+										<a class="carousel-control-prev" href="#amazonImageSlider" role="button" data-slide="prev">
+											<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+											<span class="sr-only">Previous</span>
+										</a>
+										<a class="carousel-control-next" href="#amazonImageSlider" role="button" data-slide="next">
+											<span class="carousel-control-next-icon" aria-hidden="true"></span>
+											<span class="sr-only">Next</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>						
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<h2>Project Details</h2>
+							<hr class="border-warning">
+							<ul class="list-unstyled">
+								<li>Lorem ipsum dolor sit amet</li>
+								<li>Consectetur adipiscing elit</li>
+								<li>Integer molestie lorem at massa</li>
+								<li>Facilisis in pretium nisl aliquet</li>
+								<li>Nulla volutpat aliquam velit
+								<ul>
+									<li>Phasellus iaculis neque</li>
+									<li>Purus sodales ultricies</li>
+									<li>Vestibulum laoreet porttitor sem</li>
+									<li>Ac tristique libero volutpat at</li>
+								</ul>
+								</li>
+								<li>Faucibus porta lacus fringilla vel</li>
+								<li>Aenean sit amet erat nunc</li>
+								<li>Eget porttitor lorem</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default text-white" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- NetflixExploratory Modal -->
+	<div id="NetflixExploratory" class="modal fade" role="dialog">
+		<div class="modal-dialog modal-xl">
+			<!-- Modal content-->
+			<div class="modal-content bg-dark">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">Project Description</h4>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						<div class="col-6">
+							<!-- Project description header -->
+							<p>
+								Chetan grew up in a traditional Punjabi Hindu family. His father served as a lieutenant colonel in the Indian Army, and his mother worked as a scientist in Indian Agricultural Research Institute, New Delhi. He attended the Army Public School, Dhaula Kuan,[3] where he developed a passion for writing while authoring jokes for the school magazine.[4]Bhagat graduated with a B.Tech. degree in Mechanical Engineering from the Indian Institute of Technology, Delhi in 1995.[5] Bhagat would then attend the Indian Institute of Management, Ahmedabad (IIMA), graduating in 1997 with a degree in Business Administration with an emphasis in marketing.[6][7] In June 2018, IIMA awarded him the "Young Alumni Achiever's Awards 2018" in the Art & Entertainment category.
+							</p>
+							<!-- Github link -->
+							<a href="https://github.com/ankit-7050"><img class="thumb-sm" src="./images/github-icon.png" alt=""></a>
+						</div>
+						<div class="col-6">
+							<div class="row">
+								<!-- First image slider -->
+								<div class="col-12">
+									<div id="pizzasImageSlider" class="carousel slide" data-ride="carousel" data-interval="false">
+										<div  id="pizzasCarouselItems" class="carousel-inner">
+											<!-- Dynamic items will be inserted here -->
+										</div>
+										<a class="carousel-control-prev" href="#pizzasImageSlider" role="button" data-slide="prev">
+											<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+											<span class="sr-only">Previous</span>
+										</a>
+										<a class="carousel-control-next" href="#pizzasImageSlider" role="button" data-slide="next">
+											<span class="carousel-control-next-icon" aria-hidden="true"></span>
+											<span class="sr-only">Next</span>
+										</a>
+									</div>
+								</div>
+								<!-- Second image slider -->
+								<div class="col-12">
+									<div id="amazonImageSlider" class="carousel slide" data-ride="carousel" data-interval="false">
+										<div class="carousel-inner" id="amazonCarouselItems">
+											<!-- Dynamic items will be inserted here -->
+										</div>
+										<a class="carousel-control-prev" href="#amazonImageSlider" role="button" data-slide="prev">
+											<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+											<span class="sr-only">Previous</span>
+										</a>
+										<a class="carousel-control-next" href="#amazonImageSlider" role="button" data-slide="next">
+											<span class="carousel-control-next-icon" aria-hidden="true"></span>
+											<span class="sr-only">Next</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>						
+					</div>
+					<div class="row">
+						
+						<div class="col-md-12">
+							<h2>Project Details</h2>
+							<hr class="border-warning">
+							<ul class="list-unstyled">
+								<li>Lorem ipsum dolor sit amet</li>
+								<li>Consectetur adipiscing elit</li>
+								<li>Integer molestie lorem at massa</li>
+								<li>Facilisis in pretium nisl aliquet</li>
+								<li>Nulla volutpat aliquam velit
+								<ul>
+									<li>Phasellus iaculis neque</li>
+									<li>Purus sodales ultricies</li>
+									<li>Vestibulum laoreet porttitor sem</li>
+									<li>Ac tristique libero volutpat at</li>
+								</ul>
+								</li>
+								<li>Faucibus porta lacus fringilla vel</li>
+								<li>Aenean sit amet erat nunc</li>
+								<li>Eget porttitor lorem</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default text-white" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- AmazonSales Modal -->
+	<div id="AmazonSales" class="modal fade" role="dialog">
+		<div class="modal-dialog modal-xl">
+			<!-- Modal content-->
+			<div class="modal-content bg-dark">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">Project Description</h4>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						<div class="col-6">Description</div>
+						<div class="col-6">
+							<div id="amazonImageSlider" class="carousel slide" data-ride="carousel" data-interval="false">
+								<div class="carousel-inner" id="amazonCarouselItems">
+									<!-- Dynamic items will be inserted here -->
+								</div>
+								<a class="carousel-control-prev" href="#amazonImageSlider" role="button" data-slide="prev">
+									<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+									<span class="sr-only">Previous</span>
+								</a>
+								<a class="carousel-control-next" href="#amazonImageSlider" role="button" data-slide="next">
+									<span class="carousel-control-next-icon" aria-hidden="true"></span>
+									<span class="sr-only">Next</span>
+								</a>
+							</div>
+						</div>						
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default text-white" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- VehicleCollision Modal -->
+	<div id="VehicleCollision" class="modal fade" role="dialog">
+		<div class="modal-dialog modal-xl">
+			<!-- Modal content-->
+			<div class="modal-content bg-dark">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">Project Description</h4>
+				</div>
+				<div class="modal-body">
+					<p class="text-body">VehicleCollision</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default text-white" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- IndiaCrop Modal -->
+	<div id="IndiaCrop" class="modal fade" role="dialog">
+		<div class="modal-dialog modal-xl">
+			<!-- Modal content-->
+			<div class="modal-content bg-dark">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">Project Description</h4>
+				</div>
+				<div class="modal-body">
+					<p class="text-body">IndiaCrop</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default text-white" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="ftco-footer ftco-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center">
+
+					<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+						<!-- Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a> -->
+						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+					</p>
+				</div>
+			</div>
+		</div>
+	</footer>
 
 
-  <!-- loader -->
-  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+	<!-- loader -->
+	<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+			<circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+			<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+				stroke="#F96D00" />
+		</svg></div>
 
 
-  <script src="js/jquery.min.js"></script>
-  <script src="js/jquery-migrate-3.0.1.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/jquery.easing.1.3.js"></script>
-  <script src="js/jquery.waypoints.min.js"></script>
-  <script src="js/jquery.stellar.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.magnific-popup.min.js"></script>
-  <script src="js/aos.js"></script>
-  <script src="js/jquery.animateNumber.min.js"></script>
-  <script src="js/scrollax.min.js"></script>
-  
-  <script src="js/main.js"></script>
-    
-  </body>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-migrate-3.0.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/jquery.stellar.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/aos.js"></script>
+	<script src="js/jquery.animateNumber.min.js"></script>
+	<script src="js/scrollax.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>	
+
+</body>
+
 </html>
