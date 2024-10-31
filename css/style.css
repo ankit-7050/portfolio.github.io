@@ -8935,7 +8935,7 @@ h1, h2, h3, h4, h5,
     color: #fff; }
 
 .ftco-hireme {
-  background: #ffbd39;
+  overflow: hidden;
   z-index: -1; }
   .ftco-hireme h2 {
     color: #fff;
@@ -9862,6 +9862,13 @@ textarea.form-control {
 }
 #imageModal{
   z-index: 1051;
+}
+.dJpgImage{
+  max-width: 100%;
+  height: auto;
+  cursor: pointer;
+  min-height: 15.7rem;
+  object-fit: fill;
 }
 .jpgImage{
   cursor: pointer;
