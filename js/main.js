@@ -330,20 +330,21 @@ $(document).ready(function () {
     });
   }
   const retailSqlImages = [ "10.png", "12.png", "14.png", "16.png", "18.png", "20.png", "22.png", "24.png", "26.png", "28.png", "30.png", "32.png", "34.png", "Q1.png", "Q3.png", "Q5.png", "Q7.png", "Q9.png", "11.png", "13.png", "15.png", "17.png", "19.png", "21.png", "23.png", "25.png", "27.png", "29.png", "31.png", "33.png", "35.png", "Q2.png", "Q4.png", "Q6.png", "Q8.png",];
-  const retailPowerBiImages = [
-    "Discount Analysis .jpg",
-    "Profit Analysis.jpg",
-    "Revenue Analysis.jpg",
-  ]; //File name
+  const retailPowerBiImages = ["Discount Analysis .jpg","Profit Analysis.jpg","Revenue Analysis.jpg",]; //File name
+  const rfmAnalysis = ["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg","7.jpg","8.jpg","9.jpg","10.jpg","11.jpg","12.jpg"];
+  const rfmDashboard = ["Dashboard.jpg"];
+  const supplyChainAnalysis = [ "Slide1.JPG", "Slide2.JPG", "Slide3.JPG", "Slide4.JPG", "Slide5.JPG", "Slide6.JPG", "Slide7.JPG", "Slide8.JPG", "Slide9.JPG", "Slide10.JPG", "Slide11.JPG", "Slide12.JPG", "Slide13.JPG", "Slide14.JPG", "Slide15.JPG", "Slide16.JPG", "Slide17.JPG",];
+  const supplyChainDashboard =[ "dashboard 1.jpg", "dashboard 2.jpg", "dashboard 3.jpg",];
+  const blinkitDashboard =["blinkit_dashbord.jpg"];
   // Populate carousels
   populateCarousel("pizzasImageSlider", "./images/sqlfile", retailSqlImages);
   populateCarousel("amazonImageSlider","./images/powerbi_file",retailPowerBiImages);
   populateCarousel("netflixExploratory","./images/sqlfile",retailSqlImages);
   populateCarousel("netflixExploratoryScnd","./images/powerbi_file",retailPowerBiImages);
-  populateCarousel("amazonSales","./images/sqlfile",retailSqlImages);
-  populateCarousel("amazonSalesScnd","./images/powerbi_file",retailPowerBiImages);
-  populateCarousel("vehicleCollision","./images/sqlfile",retailSqlImages);
-  populateCarousel("vehicleCollisionScnd","./images/powerbi_file",retailPowerBiImages);
-  populateCarousel("indiaCrop","./images/sqlfile",retailSqlImages);
-  populateCarousel("indiaCropScnd","./images/powerbi_file",retailPowerBiImages);
+  populateCarousel("amazonSales","./images",blinkitDashboard);
+  // populateCarousel("amazonSalesScnd","./images/powerbi_file",retailPowerBiImages);
+  populateCarousel("vehicleCollision","./images/RFM_New",rfmAnalysis);
+  populateCarousel("vehicleCollisionScnd","./images/RFM_Dashboard",rfmDashboard);
+  populateCarousel("indiaCrop","./images/Supply_Chain_Analysis_Slides",supplyChainAnalysis);
+  populateCarousel("indiaCropScnd","./images/SC_Dashboard",supplyChainDashboard);
 });
